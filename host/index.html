@@ -1,0 +1,377 @@
+<!doctype html>
+<html lang="el">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Kogeros Appartments | Apartments</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+<header class="header">
+  <div class="container">
+    <div class="navbar">
+      <a class="brand" href="index.html" aria-label="Home">
+        <div class="logo" aria-hidden="true"></div>
+        <div>
+          <div>Kogeros Appartments</div>
+          <div class="logo-subtext">Corfu</div>
+        </div>
+      </a>
+
+      <nav class="navlinks" aria-label="Primary navigation">
+        <a href="#about">About</a>
+        <a href="#apartments">Apartments</a>
+        <a href="#services">Services</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#location">Location</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <div class="nav-cta">
+        <a class="btn secondary" href="reservations.html">Reservations</a>
+        <button class="burger" data-burger aria-label="Open menu" type="button">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <div class="mobile-menu" data-mobile-menu hidden>
+      <a href="#about">About</a>
+      <a href="#apartments">Apartments</a>
+      <a href="#services">Services</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#location">Location</a>
+      <a href="reservations.html">Reservations</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+</header>
+
+<section class="hero" data-hero-slideshow>
+  <div class="container hero-inner">
+    <div class="hero-grid">
+      <div>
+        <span class="badge">🌿 Nature • Quiet • Comfort</span>
+        <h1>Apartments in a green, peaceful spot — minutes from the highlights.</h1>
+        <p>
+          Αυτό είναι template “τύπου καταλύματος”: δυνατό hero, καθαρή πλοήγηση,
+          και έντονο CTA για κρατήσεις. Άλλαξε απλά κείμενα/φωτογραφίες.
+        </p>
+
+        <div class="bookingbar">
+          <form class="form-row" data-booking-form>
+            <div class="field">
+              <label for="checkin">Check-in</label>
+              <input id="checkin" name="checkin" type="date" />
+            </div>
+            <div class="field">
+              <label for="checkout">Check-out</label>
+              <input id="checkout" name="checkout" type="date" />
+            </div>
+            <div class="field">
+              <label for="guests">Guests</label>
+              <select id="guests" name="guests">
+                <option>1</option>
+                <option selected>2</option>
+                <option>3</option>
+                <option>4</option>
+              </select>
+            </div>
+            <button class="btn" type="submit">Check availability</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="hero-cards" aria-label="Highlights">
+        <div class="hero-card">
+          <strong>3 similar units</strong>
+          <span>Ιδανικό για 2–4 άτομα (προσαρμόσιμο layout).</span>
+        </div>
+        <div class="hero-card">
+          <strong>Work-friendly</strong>
+          <span>Γραφεία / χώροι εργασίας + γρήγορο Wi-Fi.</span>
+        </div>
+        <div class="hero-card">
+          <strong>Garden & parking</strong>
+          <span>Χώρος χαλάρωσης, κήπος, ιδιωτικό parking.</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="about" class="section">
+  <div class="container">
+    <div class="section-header">
+      <span class="kicker">About</span>
+      <h2 class="h2">A simple, elegant stay page</h2>
+    </div>
+    <p class="lead">
+      Εδώ βάζεις την ιστορία/περιγραφή. Το template είναι φτιαγμένο να “κρατάει”
+      όπως ένα κλασικό site διαμερισμάτων: καθαρό layout, sections, gallery, location, contact.
+    </p>
+
+    <div class="grid-3">
+      <div class="card">
+        <p class="title">Location-first</p>
+        <p class="desc">Σύντομη περιγραφή περιοχής + τι είναι κοντά (beaches, village, Corfu town).</p>
+      </div>
+      <div class="card">
+        <p class="title">Comfort amenities</p>
+        <p class="desc">Κουζίνα/κλιματισμός/μπαλκόνι/κήπος — ό,τι θες να τονίσεις.</p>
+      </div>
+      <div class="card">
+        <p class="title">Direct booking CTA</p>
+        <p class="desc">Σταθερό “Reservations” και booking bar για άμεση μετατροπή.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="apartments" class="section alt">
+  <div class="container">
+    <div class="section-header">
+      <span class="kicker">Accommodation</span>
+      <h2 class="h2">Apartments/Studios</h2>
+    </div>
+    <p class="lead">2 apartments and 4 studios. Αν θες, το κάνουμε και "room details" σε ξεχωριστές σελίδες.</p>
+
+    <div class="rooms">
+      <article class="room">
+        <div class="img" role="img" aria-label="Apartment photo placeholder"></div>
+        <div class="body">
+          <div class="meta">2–5 guests • 2 bedrooms</div>
+          <h3>Apartment 1</h3>
+          <ul>
+            <li>Two separate bedrooms</li>
+            <li>Open-plan living area</li>
+            <li>Balcony with seating</li>
+          </ul>
+          <a href="apartment-1.html" class="btn">View Details</a>
+        </div>
+      </article>
+
+      <article class="room">
+        <div class="img" role="img" aria-label="Apartment photo placeholder"></div>
+        <div class="body">
+          <div class="meta">4–6 guests • Family suite</div>
+          <h3>Apartment 2</h3>
+          <ul>
+            <li>Two-room family suite</li>
+            <li>Dining nook + sofa bed</li>
+            <li>Ground-floor patio</li>
+          </ul>
+          <a href="apartment-2.html" class="btn">View Details</a>
+        </div>
+      </article>
+
+      <article class="room">
+        <div class="img" role="img" aria-label="Studio photo placeholder"></div>
+        <div class="body">
+          <div class="meta">2–4 guests • Studio • Balcony</div>
+          <h3>Studio 1</h3>
+          <ul>
+            <li>Equipped kitchen</li>
+            <li>Air conditioning</li>
+            <li>Outdoor space</li>
+          </ul>
+          <a href="studio-1.html" class="btn">View Details</a>
+        </div>
+      </article>
+
+      <article class="room">
+        <div class="img" role="img" aria-label="Studio photo placeholder"></div>
+        <div class="body">
+          <div class="meta">2–4 guests • Studio • Work desk</div>
+          <h3>Studio 2</h3>
+          <ul>
+            <li>Fast Wi-Fi</li>
+            <li>Quiet environment</li>
+            <li>Smart TV / streaming</li>
+          </ul>
+          <a href="studio-2.html" class="btn">View Details</a>
+        </div>
+      </article>
+
+      <article class="room">
+        <div class="img" role="img" aria-label="Studio photo placeholder"></div>
+        <div class="body">
+          <div class="meta">2–4 guests • Studio • Garden view</div>
+          <h3>Studio 3</h3>
+          <ul>
+            <li>Private parking</li>
+            <li>Garden & BBQ area</li>
+            <li>Family-friendly</li>
+          </ul>
+          <a href="studio-3.html" class="btn">View Details</a>
+        </div>
+      </article>
+
+      <article class="room">
+        <div class="img" role="img" aria-label="Studio photo placeholder"></div>
+        <div class="body">
+          <div class="meta">2 guests • Studio layout</div>
+          <h3>Studio 4</h3>
+          <ul>
+            <li>Cozy studio plan</li>
+            <li>Sea-breeze cross ventilation</li>
+            <li>Compact kitchenette</li>
+          </ul>
+          <a href="studio-4.html" class="btn">View Details</a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="services" class="section">
+  <div class="container">
+    <div class="section-header">
+      <span class="kicker">Services</span>
+      <h2 class="h2">Everything you need</h2>
+    </div>
+    <p class="lead">Εδώ μπαίνουν τα “service subpages” που μοιάζουν με το skafonas (Wi-Fi/workspaces, garden/parking/BBQ, access, etc.). :contentReference[oaicite:1]{index=1}</p>
+
+    <div class="grid-3">
+      <div class="card">
+        <p class="title">Workspaces & Wi-Fi</p>
+        <p class="desc">Πρόσθεσε λεπτομέρειες για γραφεία, πρίζες, φωτισμό, ταχύτητα internet.</p>
+      </div>
+      <div class="card">
+        <p class="title">Garden • BBQ • Parking</p>
+        <p class="desc">Περιγραφή για εξωτερικό χώρο, χαλάρωση, ιδιωτική στάθμευση.</p>
+      </div>
+      <div class="card">
+        <p class="title">Access & Transport</p>
+        <p class="desc">Οδηγίες πρόσβασης με όχημα, σημεία αναφοράς, αποστάσεις.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="gallery" class="section alt">
+  <div class="container">
+    <div class="section-header">
+      <span class="kicker">Gallery</span>
+      <h2 class="h2">A clean photo grid</h2>
+    </div>
+    <p class="lead">Βάλε τις δικές σου εικόνες μέσα στο `assets/img/` και άλλαξε τα filenames στο CSS.</p>
+
+    <div class="gallery" aria-label="Photo gallery">
+      <div class="big"></div>
+      <div class="small">
+        <div class="tile"></div>
+        <div class="tile"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="location" class="section">
+  <div class="container">
+    <div class="section-header">
+      <span class="kicker">Location</span>
+      <h2 class="h2">Find us easily</h2>
+    </div>
+    <p class="lead">Στην πράξη θα βάλεις Google Maps embed link (ή OpenStreetMap iframe).</p>
+
+    <div class="split">
+      <div class="map">
+        <!-- Βάλε το δικό σου embed URL -->
+        <iframe
+          title="Map"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          src="https://www.openstreetmap.org/export/embed.html?bbox=19.80%2C39.55%2C19.90%2C39.62&layer=mapnik">
+        </iframe>
+      </div>
+
+      <div class="contactbox">
+        <h3 class="contact-heading">Quick info</h3>
+        <ul class="list">
+          <li><strong>Address:</strong> Your address line here</li>
+          <li><strong>Phone:</strong> +30 …</li>
+          <li><strong>Email:</strong> info@yourdomain.gr</li>
+          <li><strong>Check-in/out:</strong> 12:00 / 12:00</li>
+        </ul>
+
+        <div class="button-group">
+          <a class="btn" href="reservations.html">Reservations</a>
+          <a class="btn secondary" href="contact.html">Contact</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="testimonials" class="section testimonials-section">
+  <div class="container">
+    <div class="section-header">
+      <span class="kicker">Testimonials</span>
+      <h2 class="h2">What our travelers say</h2>
+    </div>
+
+    <div class="testimonials-grid">
+      <div class="testimonial-card">
+        <div class="stars">⭐⭐⭐⭐⭐</div>
+        <p class="testimonial-text">Super relaxing, lovely hosts, spotless apartment with everything we needed. Also an adorable family of cats in the garden!</p>
+        <div class="testimonial-author">
+          <strong>Rita</strong>
+          <span>Couple</span>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <div class="stars">⭐⭐⭐⭐⭐</div>
+        <p class="testimonial-text">Incredible, kind, warm and nice host. The apartment is comfortable and extremely clean. Great value for the price! I strongly recommend the property.</p>
+        <div class="testimonial-author">
+          <strong>Dan</strong>
+          <span>Family</span>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <div class="stars">⭐⭐⭐⭐⭐</div>
+        <p class="testimonial-text">We had an amazing stay. The place is perfectly equipped and clean and the atmosphere is beautiful and calm. The family that manages the accommodation are super friendly.</p>
+        <div class="testimonial-author">
+          <strong>Anna Bodi</strong>
+          <span>Family with Children</span>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <div class="stars">⭐⭐⭐⭐⭐</div>
+        <p class="testimonial-text">Absolutely positive experience. Great host, great location and exceptional cleanliness.</p>
+        <div class="testimonial-author">
+          <strong>Anton</strong>
+          <span>Family</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand">Kogeros Appartments — template</div>
+        <p>Αυτό είναι starter. Μπορείς να το “ντύσεις” με τα δικά σου κείμενα, fonts, χρώματα και φωτογραφίες.</p>
+        <div class="mini">© <span id="y"></span> Your Brand. All rights reserved.</div>
+      </div>
+      <div>
+        <div class="footer-heading">Links</div>
+        <p class="footer-links">
+          <a href="reservations.html">Reservations</a><br/>
+          <a href="contact.html">Contact</a><br/>
+          <a href="#gallery">Gallery</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

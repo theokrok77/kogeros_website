@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="el">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+<header class="header">
+  <div class="container">
+    <div class="navbar">
+      <a class="brand" href="index.html">
+        <div class="logo"></div>
+        <div>
+          <div>Kogeros Appartments</div>
+          <div class="logo-subtext">Corfu</div>
+        </div>
+      </a>
+
+      <nav class="navlinks">
+        <a href="index.html#about">About</a>
+        <a href="index.html#apartments">Apartments</a>
+        <a href="index.html#services">Services</a>
+        <a href="index.html#gallery">Gallery</a>
+        <a href="index.html#location">Location</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <div class="nav-cta">
+        <a class="btn secondary" href="reservations.html">Reservations</a>
+        <button class="burger" data-burger aria-label="Open menu" type="button">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <div class="mobile-menu" data-mobile-menu hidden>
+      <a href="index.html#about">About</a>
+      <a href="index.html#apartments">Apartments</a>
+      <a href="index.html#services">Services</a>
+      <a href="index.html#gallery">Gallery</a>
+      <a href="index.html#location">Location</a>
+      <a href="reservations.html">Reservations</a>
+    </div>
+  </div>
+</header>
+
+<section class="section">
+  <div class="container">
+    <div class="section-header">
+      <span class="kicker">Contact</span>
+      <h2 class="h2">Let’s talk</h2>
+    </div>
+    <p class="lead">Contact page με info + φόρμα. (Αν το θες πιο “ίδιο”, το φτιάχνουμε με sidebar και map.)</p>
+
+    <div class="split">
+      <div class="contactbox">
+        <h3 class="contact-heading">Contact details</h3>
+        <ul class="list">
+          <li><strong>Phone:</strong> +30 …</li>
+          <li><strong>Email:</strong> info@yourdomain.gr</li>
+          <li><strong>Address:</strong> Your address, Corfu</li>
+        </ul>
+
+        <div class="contact-form-section">
+          <h3 class="contact-heading">Send a message</h3>
+          <form class="contact-form">
+            <div class="field">
+              <label>Name</label>
+              <input type="text" placeholder="Your name" />
+            </div>
+            <div class="field">
+              <label>Email</label>
+              <input type="email" placeholder="you@email.com" />
+            </div>
+            <div class="field">
+              <label>Message</label>
+              <input type="text" placeholder="How can we help?" />
+            </div>
+            <button class="btn" type="button" onclick="alert('Connect this to email/backend!')">Send</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="map">
+        <iframe
+          title="Map"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          src="https://www.openstreetmap.org/export/embed.html?bbox=19.80%2C39.55%2C19.90%2C39.62&layer=mapnik">
+        </iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand">Kogeros Appartments — template</div>
+        <p>Contact page starter.</p>
+        <div class="mini">© <span id="y"></span> Your Brand.</div>
+      </div>
+      <div>
+        <div class="footer-heading">Links</div>
+        <p class="footer-links">
+          <a href="index.html">Home</a><br/>
+          <a href="reservations.html">Reservations</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

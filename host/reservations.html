@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="el">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Reservations</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+<header class="header">
+  <div class="container">
+    <div class="navbar">
+      <a class="brand" href="index.html">
+        <div class="logo"></div>
+        <div>
+          <div>Kogeros Appartments</div>
+          <div class="logo-subtext">Corfu</div>
+        </div>
+      </a>
+
+      <nav class="navlinks">
+        <a href="index.html#about">About</a>
+        <a href="index.html#apartments">Apartments</a>
+        <a href="index.html#services">Services</a>
+        <a href="index.html#gallery">Gallery</a>
+        <a href="index.html#location">Location</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <div class="nav-cta">
+        <a class="btn secondary" href="reservations.html">Reservations</a>
+        <button class="burger" data-burger aria-label="Open menu" type="button">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <div class="mobile-menu" data-mobile-menu hidden>
+      <a href="index.html#about">About</a>
+      <a href="index.html#apartments">Apartments</a>
+      <a href="index.html#services">Services</a>
+      <a href="index.html#gallery">Gallery</a>
+      <a href="index.html#location">Location</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+</header>
+
+<section class="section">
+  <div class="container">
+    <div class="section-header">
+      <span class="kicker">Reservations</span>
+      <h2 class="h2">Request availability</h2>
+    </div>
+    <p class="lead">Εδώ θα βάλεις: (α) φόρμα, (β) σύνδεση με booking engine, ή (γ) link σε πλατφόρμα.</p>
+
+    <div class="split">
+      <div class="card">
+        <p class="title">Reservation form (dummy)</p>
+        <p class="desc">Αυτό είναι απλό placeholder για να το συνδέσεις μετά σε backend ή υπηρεσία.</p>
+
+        <form class="reservation-form">
+          <div class="field">
+            <label>Full name</label>
+            <input type="text" placeholder="Your name" />
+          </div>
+          <div class="field">
+            <label>Email</label>
+            <input type="email" placeholder="you@email.com" />
+          </div>
+          <div class="field">
+            <label>Message</label>
+            <input type="text" placeholder="Dates, guests, questions..." />
+          </div>
+          <button class="btn" type="button" onclick="alert('Connect this to email/backend!')">Send</button>
+        </form>
+      </div>
+
+      <div class="card">
+        <p class="title">Tips</p>
+        <p class="desc">
+          Αν θες να το κάνουμε “σαν production”, το επόμενο βήμα είναι:
+          ημερολόγιο + διαθεσιμότητα + email templates + anti-spam.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand">Kogeros Appartments — template</div>
+        <p>Reservations page starter.</p>
+        <div class="mini">© <span id="y"></span> Your Brand.</div>
+      </div>
+      <div>
+        <div class="footer-heading">Links</div>
+        <p class="footer-links">
+          <a href="index.html">Home</a><br/>
+          <a href="contact.html">Contact</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

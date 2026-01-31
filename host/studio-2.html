@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="el">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Apartment B | Kogeros Appartments</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+<header class="header">
+  <div class="container">
+    <div class="navbar">
+      <a class="brand" href="index.html">
+        <div class="logo"></div>
+        <div>
+          <div>Kogeros Appartments</div>
+          <div class="logo-subtext">Corfu</div>
+        </div>
+      </a>
+
+      <nav class="navlinks">
+        <a href="index.html#about">About</a>
+        <a href="index.html#apartments">Apartments</a>
+        <a href="index.html#services">Services</a>
+        <a href="index.html#gallery">Gallery</a>
+        <a href="index.html#location">Location</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <div class="nav-cta">
+        <a class="btn secondary" href="reservations.html">Reservations</a>
+        <button class="burger" data-burger aria-label="Open menu" type="button">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <div class="mobile-menu" data-mobile-menu hidden>
+      <a href="index.html#about">About</a>
+      <a href="index.html#apartments">Apartments</a>
+      <a href="index.html#services">Services</a>
+      <a href="index.html#gallery">Gallery</a>
+      <a href="index.html#location">Location</a>
+      <a href="reservations.html">Reservations</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+</header>
+
+<section class="section">
+  <div class="container">
+    <div class="apartment-detail">
+      <div class="apartment-header">
+        <div>
+          <span class="kicker">Apartment B</span>
+          <h1 class="apartment-title">Work-Friendly Modern Space</h1>
+          <p class="apartment-meta">2–4 guests • Work desk • Fast Wi-Fi • 50m²</p>
+        </div>
+        <div class="apartment-price">
+          <div class="price-label">From</div>
+          <div class="price-value">€80<span>/night</span></div>
+        </div>
+      </div>
+
+      <div class="apartment-gallery">
+        <div class="apartment-main-img"></div>
+        <div class="apartment-thumbs">
+          <div class="thumb"></div>
+          <div class="thumb"></div>
+          <div class="thumb"></div>
+        </div>
+      </div>
+
+      <div class="apartment-content">
+        <div class="apartment-description">
+          <h2>About this apartment</h2>
+          <p>
+            Apartment B is designed for digital nomads and remote workers. Features a dedicated 
+            work desk, high-speed internet, ergonomic seating, and a quiet environment perfect 
+            for productivity. Smart TV with streaming services for downtime relaxation.
+          </p>
+          
+          <h3>Amenities</h3>
+          <div class="amenities-grid">
+            <div class="amenity-item">✓ Fast Wi-Fi (100 Mbps)</div>
+            <div class="amenity-item">✓ Dedicated work desk</div>
+            <div class="amenity-item">✓ Ergonomic chair</div>
+            <div class="amenity-item">✓ Smart TV / streaming</div>
+            <div class="amenity-item">✓ Air conditioning</div>
+            <div class="amenity-item">✓ Quiet environment</div>
+            <div class="amenity-item">✓ Fully equipped kitchen</div>
+            <div class="amenity-item">✓ Free parking</div>
+          </div>
+
+          <h3>Space</h3>
+          <ul>
+            <li><strong>Bedroom:</strong> 1 double bed with workspace area</li>
+            <li><strong>Living room:</strong> Comfortable seating, dining area, modern kitchen</li>
+            <li><strong>Bathroom:</strong> Walk-in shower, premium toiletries</li>
+            <li><strong>Work area:</strong> Large desk, task lighting, power outlets</li>
+          </ul>
+        </div>
+
+        <div class="booking-sidebar">
+          <div class="booking-card">
+            <h3>Check Availability</h3>
+            <form class="booking-form-detail" data-booking-form-detail>
+              <div class="field">
+                <label for="checkin-b">Check-in</label>
+                <input id="checkin-b" name="checkin" type="date" required />
+              </div>
+              <div class="field">
+                <label for="checkout-b">Check-out</label>
+                <input id="checkout-b" name="checkout" type="date" required />
+              </div>
+              <div class="field">
+                <label for="guests-b">Guests</label>
+                <select id="guests-b" name="guests">
+                  <option>1</option>
+                  <option selected>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                </select>
+              </div>
+              <button class="btn" type="submit">Book Now</button>
+            </form>
+
+            <div class="booking-info">
+              <p><strong>Good to know:</strong></p>
+              <ul>
+                <li>Check-in: 14:00 - 20:00</li>
+                <li>Check-out: Until 11:00</li>
+                <li>Minimum stay: 3 nights</li>
+                <li>Monthly discounts available</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="contact-host">
+            <h4>Questions?</h4>
+            <p>Contact us for more information or special requests.</p>
+            <a href="contact.html" class="btn secondary">Contact Host</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand">Kogeros Appartments</div>
+        <p>Your peaceful retreat in Corfu.</p>
+        <div class="mini">© <span id="y"></span> Kogeros Appartments. All rights reserved.</div>
+      </div>
+      <div>
+        <div class="footer-heading">Links</div>
+        <p class="footer-links">
+          <a href="index.html">Home</a><br/>
+          <a href="index.html#apartments">All Apartments</a><br/>
+          <a href="contact.html">Contact</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
